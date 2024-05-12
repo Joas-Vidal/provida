@@ -22,7 +22,6 @@ a {
 .login-area .fundo_img {
     position: fixed;
     top: 0;
-    left: 0;
     height: 100%;
     opacity: 0.8;
 }
@@ -139,6 +138,7 @@ a {
 .input_area input:focus + .placeholder{
     top: 6px;
     font-size: 8px;
+    color: var(--green-color);
 }
 .form_area .input_area:focus, .form_area .input_area:active, .form_area .input_area:visited {
     border-bottom: 4px solid var(--green-color);

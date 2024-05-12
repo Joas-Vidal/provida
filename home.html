@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/home.css">
 </head>
 <body>
-    
+    <header>
+        <div class="fundo-header">
+            <img src="assets/img/fundo-header-home.png" alt="Fundo - Home">
+        </div>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">Menu Item 1</a></li>
+                <li><a href="#">Menu Item 2</a></li>
+                <li><a href="#">Menu Item 3</a></li>
+                <li><a href="#">Menu Item 4</a></li>
+                <li><a href="#">Menu Item 5</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <span class="menu-btn">&#9776;</span>
+            <h2>Main Content Area</h2>
+            <p>This is the main content area.</p>
+        </div>
+    </header>
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $("#sidebar").toggleClass("active");
+        });
+
+        $(".close-btn").click(function() {
+            $("#sidebar").removeClass("active");
+        });
+
+        $(document).on("click", function(e) {
+            if (!$(e.target).closest("#sidebar, .menu-btn").length) {
+                $("#sidebar").removeClass("active");
+            }
+        });
+    });
+</script>
