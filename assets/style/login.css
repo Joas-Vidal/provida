@@ -74,6 +74,7 @@ a {
     outline: none;
     margin-left: -1px;
     border: 0;
+    border-radius: 0;
     border-top-right-radius: 4px;
     width: 100%;
 }
