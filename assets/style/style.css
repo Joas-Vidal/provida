@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --green-color: #00aa9b;
+    --orange-color: #ff8014;
+    --font-14: 14px;
+}
+.mb_gap-1 {
+    margin-bottom: 1.4rem !important;
+}
+.login-area .fundo_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.8;
+}
+.login-area .content_login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.login-area .content_login .logo_topo {
+    width: 200px;
+}
+.login-area .content_login .img_wellcome {
+    max-width: 210px;
+    opacity: 0.9;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.login-area .content_login .img_wellcome img {
+    width: 100%;
+}
+.login-area form {
+    width: 100%;
+}
+.login-area .form_area {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.form_area .input_area {
+    display: flex;
+    border-bottom: 2px solid var(--green-color);
+    opacity: 0.8;
+    position: relative;
+}
+.input_icon img {
+    width: 22px;
+}
+.login-area .input_icon {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 4px;
+    height: 48px;
+    width: 48px;
+}
+.login-area input {
+    outline: none;
+    margin-left: -1px;
+    border: 0;
+    border-top-right-radius: 4px;
+    width: 100%;
+}
+.login-area .btn_submit {
+    background: var(--orange-color);
+    color: white;
+    height: 58px;
+    width: 100%;
+    border-radius: 54px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 2rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.area_contact {
+    text-align: center;
+    width: 210px;
+    margin-top: 1rem;
+}
+.area_contact .field_question {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-14);
+}
+.area_contact .field_question .text_duvida {
+    color: white;
+}
+.area_contact .field_question .link_talkUs {
+    color: var(--orange-color);
+    text-decoration: none;
+    font-size: var(--font-14);
+}
+.area_contact a {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--font-14);
+    margin-top: 2px;
+}
+.input_area {
+    position: relative;
+}
+
+.input_area .placeholder {
+    position: absolute;
+    top: 16px;
+    left: 45px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 11px;
+    color: #575757;
+    font-weight: 600;
+}
+
+.input_area input {
+    font-size: 12px; 
+}
+
+.input_area input:focus + .placeholder{
+    top: 6px; /* Ajuste conforme necessário */
+    font-size: 8px; /* Tamanho do placeholder quando o input está em foco ou preenchido */
+}
+.form_area .input_area:focus, .form_area .input_area:active, .form_area .input_area:visited {
+    border-bottom: 4px solid var(--green-color);
+}
