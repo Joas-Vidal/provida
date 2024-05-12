@@ -81,6 +81,9 @@ a {
 .login-area .btn_submit {
     background: var(--orange-color);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 58px;
     width: 100%;
     border-radius: 54px;
@@ -120,7 +123,6 @@ a {
 .input_area {
     position: relative;
 }
-
 .input_area .placeholder {
     position: absolute;
     top: 16px;
@@ -131,15 +133,19 @@ a {
     color: #575757;
     font-weight: 600;
 }
-
 .input_area input {
     font-size: 12px; 
 }
-
 .input_area input:focus + .placeholder{
-    top: 6px; /* Ajuste conforme necessário */
-    font-size: 8px; /* Tamanho do placeholder quando o input está em foco ou preenchido */
+    top: 6px;
+    font-size: 8px;
 }
 .form_area .input_area:focus, .form_area .input_area:active, .form_area .input_area:visited {
     border-bottom: 4px solid var(--green-color);
+}
+.count_char {
+    position: absolute;
+    bottom: -25px;
+    right: 14px;
+    font-size: 11px;
 }

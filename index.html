@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/login.css">
 </head>
 <body>
     <div class="login-area">
@@ -30,8 +30,11 @@
                         <label for="cpf" class="input_icon"><img src="assets/icons/shield.svg" alt="Insira seu CPF"></label>
                         <input id="cpf" type="text">
                         <span class="placeholder place_cpf">CPF</span>
+                        <span class="count_char">
+                            0/14
+                        </span>
                     </div>
-                    <button type="submit" class="btn_submit">Login</button>
+                    <a href="home.html" type="submit" class="btn_submit">Login</a>
                 </div>
             </form>
             <div class="area_contact">
@@ -47,4 +50,4 @@
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/login.js"></script>
