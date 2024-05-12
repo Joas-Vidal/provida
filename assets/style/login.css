@@ -5,9 +5,6 @@
     font-weight: 400;
     font-style: normal;
 }
-body {
-    overflow: hidden;
-}
 a {
     text-decoration: none;
 }
@@ -155,4 +152,18 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+@media screen and (min-width: 800px) {
+    .login_body {
+        background-image: url('../img/fundo-landscape.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    } 
+    .login-area .content_login .img_wellcome {
+        margin-top: 0;
+    } 
+    .area_contact {
+        margin-bottom: 2rem;
+    }  
 }

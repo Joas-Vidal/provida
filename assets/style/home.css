@@ -6,7 +6,6 @@ header {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
-
 .sidebar {
     position: fixed;
     left: 0;
@@ -19,11 +18,9 @@ header {
     transform: translateX(-100%);
     z-index: 999;
 }
-
 .sidebar.active {
     transform: translateX(0);
 }
-
 .sidebar .close-btn {
     position: absolute;
     top: 20px;
@@ -32,13 +29,11 @@ header {
     color: #fff;
     font-size: 20px;
 }
-
 .content {
     margin-left: 250px;
     padding: 20px;
     transition: margin 0.3s ease-in-out;
 }
-
 .menu-btn {
     position: fixed;
     left: 10px;
