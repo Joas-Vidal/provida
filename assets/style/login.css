@@ -149,3 +149,9 @@ a {
     right: 14px;
     font-size: 11px;
 }
+.login_body {
+    background-image: url('../img/fundo-login.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
