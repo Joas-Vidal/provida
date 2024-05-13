@@ -6,42 +6,6 @@ header {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 80%;
-    height: 100%;
-    background-color: #eeeeee;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
-    z-index: 999;
-}
-.sidebar.active {
-    transform: translateX(0);
-}
-.sidebar .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-}
-.menu-btn {
-    position: absolute;
-    left: 18px;
-    top: 30px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 25px;
-}
-.img_menu {
-    margin-bottom: 2rem;
-}
-.img_menu img {
-    width: 100%;
-}
 .content_user {
     position: absolute;
     top: 50px;
@@ -145,7 +109,7 @@ header {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     padding: 14px 10px;
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
     white-space: normal;
 }
 .texto_bloco .subtitle, 
@@ -198,6 +162,9 @@ footer .blocos .two_blocks .bloco {
     text-align: center;
     font-size: var(--font-11);
     font-weight: 600;
+}
+footer .bloco {
+    box-shadow: none;
 }
 @media screen and (min-width: 800px) {
     .bloco_scroll .w_bloco--medio {
