@@ -8,6 +8,7 @@
     transition: transform 0.3s ease-in-out;
     transform: translateX(-100%);
     z-index: 999;
+    overflow-y: auto;
 }
 .sidebar.active {
     transform: translateX(0);
@@ -58,4 +59,9 @@
     height: 18px;
     color: #515151;
     font-weight: 500;
+}
+@media screen and (min-width: 800px) {
+    .sidebar {
+        width: 50%;
+    }
 }

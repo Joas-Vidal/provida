@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+        <title>Agendamento</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style/home.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/sidebar.css">
+        <link rel="stylesheet" href="assets/style/agendamento.css">
+    </head>
+<body style="background-color: #eee;">
+    <header class="header_page">
+        <div class="agendamento_content--header">
+            <div class="fundo-header">
+                <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
+            </div>
+            <div class="menu">
+                <a href="home.html" class="menu-btn">
+                    <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                </a>
+            </div>
+            <div class="content_user">
+                <h2>Grupos de Serviço</h2>
+                <h3>Dividimos os serviços em grupos, escolha uma das opções</h3>
+            </div>
+            <form action="">
+                <div class="user_box">
+                    <input type="text" id="search_agendamento" placeholder="Pesquisa">
+                    <button type="submit">
+                        <img src="assets/icons/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="content_options">
+        <a href="" search="Especialidades Médicas">
+            <div class="option_bloco">
+                <img class="img_option" src="assets/icons/heart-pulse.svg" alt="Especialidades Médicas">
+                <div class="text_box">
+                    <h2 class="title_box">Especialidades Médicas</h2>
+                    <h3>Proporciona uma melhor experiência a você, podendo agendar uma consulta presencial. Você  pode escolher a especialidade, bem como selcionar o município
+                        e o profíssional conveniado que deseja consultar.
+                    </h3>
+                    <h3>Todas as nossas unidades possuem instalações moderadas e preparadas para atender você e sua família.</h3>
+                    <h3>36 serviços disponíveis</h3>
+                </div>
+                <img src="assets/icons/caret-right.svg">
+            </div>
+        </a>
+        <a href="" search="Especialidades Não Médicas">
+            <div class="option_bloco">
+                <img class="img_option" src="assets/icons/hearts.svg" alt="Especialidades Não Médicas">
+                <div class="text_box">
+                    <h2 class="title_box">Especialidades Não Médicas</h2>
+                    <h3>Atendimento presencial, onde você escolhe a especialidade não médica, em qual município quer ser atendido e qual o prestador conveniado deseja agendar.</h3>
+                    <h3>27 serviços disponíveis</h3>
+                </div>
+                <img src="assets/icons/caret-right.svg">
+            </div>
+        </a>
+        <a href="" search="Exames">
+            <div class="option_bloco">
+                <img class="img_option" src="assets/icons/checkup-list.svg" alt="Exames">
+                <div class="text_box">
+                    <h2 class="title_box">Exames</h2>
+                    <h3>Agende seus exames laboratoriais, você pode escolher o município e laboratório conveniado desejado.</h3>
+                    <h3>27 serviços disponíveis</h3>
+                </div>
+                <img src="assets/icons/caret-right.svg">
+            </div>
+        </a>
+        <div id="nothing_here">
+            <div class="option_bloco">
+                <img class="img_option" src="assets/icons/stop.svg" alt="Nada Encontrado">
+                <div class="text_box">
+                    <h2 class="title_box">Nenhum Registro Encontrado</h2>
+                    <h3>Por favor, verifique o conteúdo digitado.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/sidebar.js"></script>
+
+<script>
+    $('#search_agendamento').on('input', function() {
+        var filtro = $(this).val().toUpperCase();
+        var nenhumResultadoEncontrado = true; // Flag para verificar se nenhum resultado foi encontrado
+
+        $('.option_bloco').each(function() {
+            var atributoSearch = $(this).parent().attr('search');
+            if (atributoSearch.toUpperCase().indexOf(filtro) > -1) {
+                $(this).show();
+                nenhumResultadoEncontrado = false; // Um resultado foi encontrado
+            } else {
+                $(this).hide();
+                $('#nothing_here').show();
+            }
+        });
+
+        // Se nenhum resultado for encontrado, exibe o bloco "Nenhum Registro Encontrado"
+        if (nenhumResultadoEncontrado) {
+            $('#nothing_here').show();
+        } else {
+            $('#nothing_here').hide();
+        }
+    });
+</script>
