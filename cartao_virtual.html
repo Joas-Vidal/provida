@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
-        <title>Serviços</title>
+        <title>Cartão Virtual</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -12,57 +12,57 @@
         <link rel="stylesheet" href="assets/style/sidebar.css">
         <link rel="stylesheet" href="assets/style/agendamento.css">
     </head>
-<body style="background-color: #eee;">
-    <header class="header_page">
-        <div class="agendamento_content--header">
-            <div class="fundo-header">
-                <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
-            </div>
-            <div class="menu">
-                <a href="municipio.html" class="menu-btn">
-                    <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
-                </a>
-            </div>
-            <div class="content_user">
-                <h2>Profissionais</h2>
-                <h3>Escolha um dos profissionais abaixo</h3>
-            </div>
-            <form action="">
-                <div class="user_box">
-                    <input type="text" id="search_agendamento" placeholder="Pesquisa">
-                    <button type="submit">
-                        <img src="assets/icons/search.svg" alt="Buscar">
-                    </button>
+    <body style="background-color: #eee;">
+        <header class="header_page">
+            <div class="agendamento_content--header">
+                <div class="fundo-header">
+                    <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
                 </div>
-            </form>
-        </div>
-    </header>
-    <div class="content_options">
-        <a href="agendamento_hora.html" search="Cristina de Oliveira Fenner">
-            <div class="option_bloco">
-                <div class="flex_box">
-                    <img class="img_option" src="assets/icons/doctor.svg" alt="Cristina de Oliveira Fenner">
+                <div class="menu">
+                    <a href="municipio.html" class="menu-btn">
+                        <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                    </a>
+                </div>
+                <div class="content_user">
+                    <h2>Cartão Virtual</h2>
+                    <h3>Selecione o participante que deseja visualizar</h3>
+                </div>
+                <form action="">
+                    <div class="user_box">
+                        <input type="text" id="search_agendamento" placeholder="Pesquisa">
+                        <button type="submit">
+                            <img src="assets/icons/search.svg" alt="Buscar">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <div class="content_options">
+            <a href="card.html" search="Rafael Pinto e Silva">
+                <div class="option_bloco">
+                    <div class="flex_box">
+                        <img class="img_option" src="assets/icons/user-card.svg" alt="Rafael Pinto e Silva">
+                        <div class="text_box">
+                            <h2 class="title_box">Rafael Pinto e Silva</h2>
+                            
+                            <h3>Titular do Plano</h3>
+                        </div>
+                    </div>
+                    <img class="next_page" src="assets/icons/caret-right.svg">
+                </div>
+            </a>
+            
+            <div id="nothing_here">
+                <div class="option_bloco nth_here">
+                    <img class="img_option" src="assets/icons/stop.svg" alt="Nada Encontrado">
                     <div class="text_box">
-                        <h2 class="title_box">Cristina de Oliveira Fenner</h2>
-                        
-                        <h3>Disponível em <span style="color: rgb(0 0 140); font-weight: 700;">19 dias</span></h3>
+                        <h2 class="title_box">Nenhum Registro Encontrado</h2>
+                        <h3>Por favor, verifique o conteúdo digitado.</h3>
                     </div>
                 </div>
-                <img class="next_page" src="assets/icons/caret-right.svg">
-            </div>
-        </a>
-        
-        <div id="nothing_here">
-            <div class="option_bloco nth_here">
-                <img class="img_option" src="assets/icons/stop.svg" alt="Nada Encontrado">
-                <div class="text_box">
-                    <h2 class="title_box">Nenhum Registro Encontrado</h2>
-                    <h3>Por favor, verifique o conteúdo digitado.</h3>
-                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
 <style>
     .content_options .option_bloco img {

@@ -1,0 +1,120 @@
+.kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.bg_card {
+    background-image: url('../img/card\ retrato.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 16px;
+}
+.content_virtual--card {
+    border: 6px solid #ffffff73;
+    border-radius: 20px;
+    padding: 64px 26px;
+}
+.content_virtual--card .conteudo_card .btn_back {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-11);
+    color: white;
+} 
+.content_virtual--card .conteudo_card .btn_back img {
+    width: 22px;
+    margin-right: 8px;
+}
+.content_virtual--card .conteudo_card .header_card  h1 {
+    font-size: 17px;
+    color: #ffff006e;
+}
+.content_virtual--card .conteudo_card .header_card {
+    flex-direction: column;
+    align-items: flex-end;
+}
+.blocos_informacoes span {
+    display: flex;
+    flex-direction: column;
+}
+.blocos_informacoes .client_name {
+    text-transform: uppercase;
+    color: rgb(36, 36, 36);
+    font-size: 18px;
+    font-weight: 700;
+}
+.blocos_informacoes h3 {
+    color: white;
+    font-size: var(--font-11);
+}
+.cpf_card h3 {
+    text-align: center;
+}
+.cpf_card h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+.cNumberCard {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.modality_lands {
+    display: none !important;
+}
+.modality_portrait  {
+    text-align: center;
+}
+@media screen and (min-width: 800px) {
+    .bg_card {
+        background-image: url('../img/card\ landscape.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    } 
+    .content_virtual--card .conteudo_card .header_card h1 {
+        font-size: 30px;
+    }
+    .cpf_card img {
+        width: 200px;
+    }
+    .content_virtual--card .conteudo_card .header_card {
+        flex-direction: row;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .content_virtual--card {
+        padding-top: 26px;
+    }
+    .modality_lands {
+        display: flex !important;
+        text-align: center;
+    }
+    .modality_lands .cNumberCard {
+        font-size: 14px;
+    }
+    .modality_portrait {
+        display: none !important;
+    }
+    .blocos_informacoes.mt-3 {
+        margin-top: 1rem !important;
+    }
+    .hide-md {
+        display: none;
+    }
+}
