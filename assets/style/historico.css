@@ -1,0 +1,41 @@
+.conteudo_historico .protocol p, .prolife_date p {
+    font-size: var(--font-11);
+    color: #737373;
+    font-weight: 600;
+    
+}
+.img_chat img, .prolife_date img {
+    width: 30px;
+}
+.conteudo_historico .y_box {
+    background: #f3f3c4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2px;
+    width: 90%;
+    float: right;
+}
+.conteudo_historico .g_box {
+    background: #c4f3c6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2px;
+    width: 68%;
+    float: right;
+}
+.conteudo_historico .y_box h2, .conteudo_historico .g_box h2 {
+    font-size: var(--font-11);
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.prolife_date {
+    float: right;
+    margin-top: 1.2rem;
+    margin-bottom: 6px;
+}
+.conteudo_historico {
+    float: left;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    padding-bottom: 2rem;
+}

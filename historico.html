@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+        <title>Histórico de Agendamento</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style/home.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/sidebar.css">
+        <link rel="stylesheet" href="assets/style/agendamento.css">
+        <link rel="stylesheet" href="assets/style/historico.css">
+    </head>
+<body style="background-color: #eee;">
+    <header class="header_page header_history">
+        <div class="agendamento_content--header">
+            <div class="fundo-header">
+                <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
+            </div>
+            <div class="menu">
+                <a href="home.html" class="menu-btn">
+                    <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                </a>
+            </div>
+            <div class="content_user">
+                <h2>Histórico de Agendamento</h2>
+                <h3>Consulte abaixo os seus agendamentos</h3>
+            </div>
+            <form action="">
+                <div class="user_box">
+                    <input type="text" id="search_agendamento" placeholder="Pesquisa">
+                    <button type="submit">
+                        <img src="assets/icons/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="content_options content_history">
+        <div class="conteudo_historico">
+            <div class="protocol flex_box align-items-center">
+                <div class="img_chat">
+                    <img src="assets/icons/chat-alt.svg">
+                </div>
+                <p>Protocolo 1 em 14/05/2024 17:47</p>
+            </div>
+            <div class="y_box">
+                <h2>Seja bem-vindo ;)</h2>
+            </div>
+            <div class="prolife_date flex_box align-items-center">
+                <div class="img-chat">
+                    <img src="assets/icons/user-white-bg.svg">
+                </div>
+                <p>PróVida m 14/05/2024 17:47</p>
+            </div>
+            <div class="g_box">
+                <h2>Neste local serão exibidos os históricos de agendamentos realizados.</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/sidebar.js"></script>
+
+<script>
+    // Script simples pra pesquisa dos blocos
+    $('#search_agendamento').on('input', function() {
+        var filtro = $(this).val().toUpperCase();
+        var algumResultadoEncontrado = false; 
+
+        $('.option_bloco').each(function() {
+            var atributoSearch = $(this).parent().attr('search');
+            
+            if (atributoSearch && atributoSearch.toUpperCase().indexOf(filtro) > -1) {
+                $(this).show();
+                algumResultadoEncontrado = true; 
+            } else {
+                $(this).hide();
+            }
+        });
+
+        if (algumResultadoEncontrado) {
+            $('#nothing_here').hide();
+            $('.nth_here').hide();
+        } else {
+            $('#nothing_here').show();
+            $('.nth_here').show();
+        }
+        console.log(algumResultadoEncontrado);
+
+    });
+
+
+</script>
