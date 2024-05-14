@@ -1,0 +1,15 @@
+.body_news .content_options .option_bloco {
+    align-items: center;
+    flex-direction: column;
+}
+.body_news .content_options .option_bloco img {
+    width: 100px;
+    margin-bottom: 3rem;
+}
+.body_news .content_options .option_bloco .text_box h2 {
+    font-weight: 700;
+}
+.body_news .character_limit {
+    font-size: 14px !important;
+    color: black !important;
+}

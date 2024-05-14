@@ -1,3 +1,27 @@
 .blog_content .content_user h2 {
     font-size: var(--font-14);
 }
+.blog_content.content_options {
+    background-color: white;
+}
+.header_blog {
+    background-color: white;
+}
+.content_options.blog_conteudo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 46px;
+    background: white;
+    margin-top: 2rem;
+}
+.image_blog {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.text_blog p {
+    font-size: var(--font-14);
+}
