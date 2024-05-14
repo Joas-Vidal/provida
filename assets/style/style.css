@@ -28,6 +28,18 @@ li {
 .mt-medium {
     margin-top: 1.5rem;
 }
+.mb-1 {
+    margin-bottom: 1em;
+}
 .pb-2-medium {
     padding-bottom: 2.5rem;
+}
+.flex_box {
+    display: flex;
+}
+.grid_box {
+    display: grid;
+}
+.w-100 {
+    width: 100%;
 }

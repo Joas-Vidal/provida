@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+        <title>Serviços</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style/home.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/sidebar.css">
+        <link rel="stylesheet" href="assets/style/agendamento.css">
+        <link rel="stylesheet" href="assets/style/agendamento_hora.css">
+    </head>
+<body style="background-color: #eee;">
+    <header class="header_page header_hora">
+        <div class="agendamento_content--header">
+            <div class="fundo-header">
+                <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
+            </div>
+            <div class="menu">
+                <a href="municipio.html" class="menu-btn">
+                    <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                </a>
+            </div>
+            <div class="content_user">
+                <h2>Agendamento</h2>
+                <h3>Informe os dados abaixo para realizar o agendamento</h3>
+            </div>
+            <div class="user_box">
+                <div class="user_info">
+                    <div class="cNumber_info">
+                        <h3>130,00</h3>
+                        <h4>Valor</h4>
+                    </div>
+                    <div class="unit_info">
+                        <h3>Agudo</h3>
+                        <h4>Município</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content_options hora_content">
+        <div class="option_bloco">
+            <div class="flex_box w-100 bg-gray mb-1">
+                <img class="img_option" src="assets/icons/doctor-gray.svg">
+                <div class="text_box">
+                    <h2 class="title_box">Prestador</h2>
+                    <h3>Cristina de Oliveira Fenner</h3>
+                </div>
+            </div>
+            <div class="flex_box w-100 bg-gray mb-1">
+                <img class="img_option" src="assets/icons/medkit.svg">
+                <div class="text_box">
+                    <h2 class="title_box">Serviço</h2>
+                    <h3>Angiologia</h3>
+                </div>
+            </div>
+            <div class="flex_box w-100 bg-gray mb-1">
+                <img class="img_option" src="assets/icons/user.svg">
+                <div class="text_box">
+                    <h2 class="title_box">Participante</h2>
+                    <h3>Rafael Pinto e Silva</h3>
+                </div>
+            </div>
+            <div class="flex_box w-100 bg-gray mb-1"  id="choice_data">
+                <img class="img_option" src="assets/icons/calendar-date-schedule.svg">
+                <div class="text_box">
+                    <h2 class="title_box">Clique e escolha uma data</h2>
+                    <h3 id="data_marcada"></h3>
+                </div>
+            </div>
+            <div class="flex_box w-100 bg-gray mb-1" id="choice_time">
+                <img class="img_option" src="assets/icons/clock.svg">
+                <div class="text_box">
+                    <h2 class="title_box">Clique e escolha um horário</h2>
+                    <h3 id="clock_scheduling"></h3>
+                </div>
+            </div>
+            <a href="final_agendamento.html" class="finish-scheduling w-100">Ok, finalizar agendamento</a>
+            <div class="text_cancel w-100">
+                <span>Cancelamentos</span>
+                <p>somente pelo telefone (55) 3265-2228</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Qual o melhor horário?</p>
+            <div class="flex_box modal_options--time">
+                <button id="f_time">07:00</button>
+                <button id="s_time">07:20</button>
+                <button id="t_time">07:40</button>
+                <button id="ft_time">08:00</button>
+            </div>
+            <div class="footer-modal">
+                <span class="close">Voltar</span>
+                <span class="confirm_time">Confirmar</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-data" id="modal_data">
+        <header class="header_page header_hora">
+            <div class="agendamento_content--header">
+                <div class="fundo-header">
+                    <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
+                </div>
+                <div class="menu">
+                    <a href="municipio.html" class="menu-btn">
+                        <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                    </a>
+                </div>
+                <div class="content_user">
+                    <h2>Data do Agendamento</h2>
+                    <h3>Selecione abaixo uma das datas disponíveis para o seu agendamento</h3>
+                </div>
+            </div>
+        </header>
+        <div class="content_options hora_content">
+            <div class="month">
+                <button class="prev_month"><img src="assets/icons/left-green.svg" alt=""></button>
+                <span>Junho / 2024</span>
+                <button class="next_month"><img src="assets/icons/right-green.svg" alt=""></button>
+            </div>
+            <div class="option_bloco close_modal--data" data-agendada="01/06/2024">
+                <div class="flex_box w-100">
+                    <img class="img_option" src="assets/icons/calendar-date-schedule-green.svg">
+                    <div class="text_box">
+                        <h2 class="title_box">01/06/2024</h2>
+                        <h3>Sábado</h3>
+                    </div>
+                </div>
+                <img class="next_page" src="assets/icons/caret-right.svg">
+            </div>
+            <div class="option_bloco close_modal--data" data-agendada="03/06/2024">
+                <div class="flex_box w-100">
+                    <img class="img_option" src="assets/icons/calendar-date-schedule-green.svg">
+                    <div class="text_box">
+                        <h2 class="title_box">03/06/2024</h2>
+                        <h3>Segunda</h3>
+                    </div>
+                </div>
+                <img class="next_page" src="assets/icons/caret-right.svg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/sidebar.js"></script>
+<script src="assets/js/agendamento_hora.js"></script>

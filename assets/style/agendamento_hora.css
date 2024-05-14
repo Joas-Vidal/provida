@@ -1,0 +1,149 @@
+.header_hora .user_box .user_info {
+    width: 100%;
+}
+.header_hora .user_box {
+    bottom: 9px;
+}
+.hora_content {
+    margin-top: 2rem;
+}
+.hora_content .option_bloco {
+    border-radius: 26px;
+}
+.hora_content .option_bloco img {
+    width: 26px;
+}
+.hora_content .bg-gray {
+    background: #eee;
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+.hora_content .option_bloco .text_box h2 {
+    font-size: var(--font-11);
+    color: #949494;
+    font-weight: 500;
+}
+.hora_content .option_bloco {
+    flex-direction: column;
+}
+.hora_content .option_bloco .text_box h3 {
+    margin-top: 0;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 70% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 4px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content p {
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.modal-content .modal_options--time {
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.modal-content .modal_options--time button {
+    border: none;
+    padding: 10px;
+    border-radius: 30px
+}
+.modal-content .footer-modal {
+    text-align: right;
+    color: var(--green-color);
+}
+.modal-content .footer-modal .close {
+    margin-right: 2rem;
+}
+.hora_content .finish-scheduling {
+    background: var(--green-color);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.text_cancel {
+    text-align: center;
+    font-size: var(--font-11);
+    color: #949494;
+}
+.content_options .option_bloco {
+    padding: 24px 22px;
+}
+.content_options .option_bloco img {
+    margin-top: 0;
+}
+.content_options .option_bloco {
+    justify-content: space-between;
+    align-items: center;
+}
+.content_options .option_bloco .next_page {
+    width: 22px;
+}
+.modal-data {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #eee;
+}
+.month {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.month button {
+    background: none;
+    border: 0;
+}
+.month button img {
+    width: 15px;
+}
+.month span {
+    font-weight: 700;
+    color: var(--green-color);
+    font-size: var(--font-14);
+}
+.modal-data .text_box h2 {
+    color: black;
+    font-weight: 700;
+}
+.modal-data .text_box h3 {
+    color: var(--green-color) !important;
+    font-size: var(--font-14) !important;
+    text-transform: initial !important;
+}
+.modal-data .option_bloco {
+    flex-direction: row !important;
+    border-radius: 10px;
+}
