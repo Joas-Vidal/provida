@@ -79,6 +79,8 @@ strong {
 .go_home {
     background: var(--green-color);
     margin-top: 2rem;
+    display: block;
+    width: 100%;
 }
 .line-divisor {
     width: 100%;

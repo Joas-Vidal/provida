@@ -79,7 +79,7 @@
 .modality_portrait  {
     text-align: center;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     .bg_card {
         background-image: url('../img/card\ landscape.png');
         background-repeat: no-repeat;
