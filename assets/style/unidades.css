@@ -1,0 +1,11 @@
+.body_unity .content_options .option_bloco .text_box h4 {
+    font-size: var(--font-11);
+    color: var(--dark-gray-color);
+    margin: 4px 0;
+}
+.body_unity .content_options .option_bloco .text_box h3 {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+    font-weight: 700;
+}
