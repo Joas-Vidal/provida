@@ -61,7 +61,7 @@
                     <input type="text" id="tel" value="" placeholder="Telefone">
                 </div>
                 <span class="count_char">
-                    0/14
+                    0/13
                 </span>
             </div>
             <a href="final_telemedicina.html" class="finish-scheduling w-100">
@@ -79,7 +79,7 @@
 
 <script>
     $('#tel').on('input', function() {
-        var maxLength = 14;
+        var maxLength = 13;
         var currentLength = $(this).val().length;
         $('.count_char').text(currentLength + '/' + maxLength);
     });
