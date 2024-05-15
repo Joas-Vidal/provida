@@ -1,0 +1,229 @@
+.financeiro_conteudo .option_bloco {
+    justify-content: space-between;
+}
+.financeiro_conteudo .option_bloco .next_page {
+    width: 22px;
+}
+.financeiro_conteudo .option_bloco img, .financeiro_conteudo .option_bloco .text_box h3 {
+    margin: 0;
+}
+.financeiro_conteudo .box_payment--info {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.financeiro_conteudo .box_payment--info h2 {
+    color: rgb(82 82 82 / 1);
+    font-size: .75rem;
+    line-height: 1rem;
+}
+.box_payment--info span {
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: black;
+}
+.box_payment--info .span_status {
+    border-radius: 5px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: rgb(217 119 6 / 1);
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+.b_box {
+    padding: .75rem;
+    background-color: rgb(245 245 245 / 1);
+    border: 1px solid rgb(163 163 163 / 1);
+    border-radius: .5rem;
+}
+.lancamento_box--fatura .title-lancamento {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    color: black;
+    margin-top: 4px;
+}
+.text_default, .total_payment {
+    display: flex;
+    color: rgb(82 82 82 / 1);
+    justify-content: space-between;
+    align-items: center;
+}
+.text_default h2 {
+    color: rgb(82 82 82 / 1);
+    line-height: 1.5rem;
+    font-size: .875rem;
+    margin-right: 1rem;
+}
+.text_default span {
+    line-height: 1rem;
+    font-size: .875rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.line_fatura {
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+.total_payment h2, .total_payment span {
+    color: rgb(23 23 23 / 1);
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-size: .875rem;
+}
+.info_box--fatura {
+    border: 1px solid rgb(163 163 163 / 1);  
+}
+.line_fatura--choice {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c3c3c3;
+    margin: 10px 0; 
+}
+.choice-payment .text_choice_payment {
+    color: rgb(23 23 23 / 1);
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.financeiro_conteudo .content_options .option_bloco img {
+    width: 24px;
+}
+#pix {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-pix-content {
+    background-color: #fefefe;
+    margin: 60% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+}
+.modal-pix-content h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.modal-pix-content p {
+    color: rgb(82 82 82 / 1);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+}
+.close-pix {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(209, 0, 0);
+    border-radius: 6px;
+    margin-top: 15px;
+    color: white;
+}
+.close-pix:hover,
+.close-pix:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#pagamento-pix, .pagamento-boleto {
+    cursor: pointer;
+}
+.img_pix {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.img_pix img {
+    /* border-radius: 4px;
+    padding: 2px;
+    border: 1px solid gray; */
+}
+.confirm-pix, .confirm-boleto {
+    width: 100%;
+    background-color: var(--green-color);
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.tooltip, .tooltip_boleto {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip.show, .tooltip_boleto.show {
+    visibility: visible;
+}
+#boleto {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-boleto-content {
+    background-color: #fefefe;
+    margin: 60% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+}
+.modal-boleto-content h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.modal-boleto-content p {
+    color: rgb(82 82 82 / 1);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+}
+.close-boleto {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(209, 0, 0);
+    border-radius: 6px;
+    margin-top: 15px;
+    color: white;
+}
+.close-boleto:hover,
+.close-boleto:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

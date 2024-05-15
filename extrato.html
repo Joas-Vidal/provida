@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+        <title>Extrato Financeiro</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style/home.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/sidebar.css">
+        <link rel="stylesheet" href="assets/style/agendamento.css">
+        <link rel="stylesheet" href="assets/style/financeiro.css">
+    </head>
+    <body style="background-color: #eee;">
+        <header class="header_page">
+            <div class="agendamento_content--header">
+                <div class="fundo-header">
+                    <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
+                </div>
+                <div class="menu">
+                    <a href="home.html" class="menu-btn">
+                        <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                    </a>
+                </div>
+                <div class="content_user">
+                    <h2>Detalhes da Fatura</h2>
+                    <h3>Consulte suas parcelas e paguge sem sair de casa</h3>
+                </div>
+            </div>
+        </header>
+        <div class="content_options financeiro_conteudo">
+            <div class="option_bloco info_box--fatura flex-direction-column">
+                <div class="flex_box justify-content-space-between align-items-center w-100 b_box">
+                    <div class="flex_box box_payment--info">
+                        <h2>Vencimento</h2>
+                        <span>17/05/24</span>
+                    </div>
+                    <div class="flex_box box_payment--info">
+                        <h2>Valor</h2>
+                        <span>R$ 130,00</span>
+                    </div>
+                    <div class="flex_box box_payment--info">
+                        <h2>Status</h2>
+                        <span class="span_status">Em aberto</span>
+                    </div>
+                </div>
+                <div class="lancamento_box--fatura w-100">
+                    <h2 class="title-lancamento">Lançamentos</h2>
+                    <div class="text_default w-100">
+                        <h2>Valor Original</h2>
+                        <span>R$ 130,00</span>
+                    </div>
+                    <div class="line_fatura"></div>
+                    <div class="total_payment">
+                        <h2>Total</h2>
+                        <span>R$ 130,00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="choice-payment">
+                <h2 class="text_choice_payment">Escolha como pagar</h2>
+                <div class="line_fatura--choice"></div>
+                <div class="content_options p-0">
+                    <div class="option_bloco align-items-center"  id="pagamento-pix">
+                        <div class="flex_box">
+                            <img class="img_option" src="assets/icons/qr-code.svg">
+                            <div class="text_box">
+                                <h2 class="title_box">PIX</h2>
+                                
+                                <h3>Confirmação imediata</h3>
+                            </div>
+                        </div>
+                        <img class="next_page" src="assets/icons/caret-right.svg">
+                    </div>
+                </div>
+                <div class="content_options p-0">
+                    <div class="option_bloco align-items-center" id="pagamento-boleto">
+                        <div class="flex_box">
+                            <img class="img_option" src="assets/icons/boleto.svg">
+                            <div class="text_box">
+                                <h2 class="title_box">Boleto</h2>
+                                
+                                <h3>Confirmação em 1 a 2 dias úteis</h3>
+                            </div>
+                        </div>
+                        <img class="next_page" src="assets/icons/caret-right.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="pix" class="modal-pix">
+                <div class="modal-pix-content">
+                    <h3>Pagamento por PIX</h3>
+                    <p>Escaneie o QR Code com o aplicativo do seu banco ou copie o código clicando no botão.</p>
+
+                    <div class="img_pix">
+                        <img style="height: 115px; width: 115px;" src="assets/img/qr-code.png">
+                    </div>
+                    <button class="confirm-pix" code="123456789">Copiar Pix Copia e Cola</button>
+                    <div class="tooltip" id="tooltip">Código PIX copiado!</div>
+                    <button class="close-pix">Voltar</button>
+                </div>
+            </div>
+            <div id="boleto" class="modal-boleto">
+                <div class="modal-boleto-content">
+                    <h3>Pagamento por boleto</h3>
+                    <p>Escaneie o código de barras com o aplicativo do seu banco ou copie o código clicando no botão.</p>
+
+                    <div class="img_pix">
+                        <img src="assets/img/boleto-code.png">
+                    </div>
+                    <button class="confirm-boleto" code="23791.17100 90000.025503 07000.715008 6 97360000010">Copiar código de barras</button>
+                    <div class="tooltip_boleto" id="tooltip_boleto">Código de barras copiado!</div>
+                    <button class="close-boleto">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/sidebar.js"></script>
+<script src="assets/js/financeiro.js"></script>
