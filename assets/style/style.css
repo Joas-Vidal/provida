@@ -67,3 +67,11 @@ li {
 .p-0 {
     padding: 0 !important;
 }
+.menu .home {
+    position: absolute;
+    top: 34px;
+    right: 28px;
+}
+.menu .home img {
+    width: 22px;
+}

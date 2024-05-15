@@ -85,6 +85,7 @@
 .area_contact .field_question {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: var(--font-14);
 }
 .area_contact .field_question .text_duvida {
