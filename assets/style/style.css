@@ -22,6 +22,9 @@ a {
 li {
     list-style: none;
 }
+.mt-1 {
+    margin-top: 1rem;
+}
 .mt-2 {
     margin-top: 2rem;
 }
@@ -32,10 +35,16 @@ li {
     margin-top: 1.5rem;
 }
 .mb-1 {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
 }
 .pb-2-medium {
     padding-bottom: 2.5rem;
+}
+.pb-1-medium {
+    padding-bottom: 1.5rem;
 }
 .flex_box {
     display: flex;
