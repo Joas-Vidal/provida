@@ -79,6 +79,12 @@
 .modality_portrait  {
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+    .btn_bck {
+        position: absolute;
+        top: 40px;
+    }
+}
 @media screen and (min-width: 600px) {
     .bg_card {
         background-image: url('../img/card\ landscape.png');
@@ -86,6 +92,9 @@
         background-attachment: fixed;
         background-size: cover;
     } 
+    .content_virtual--card .conteudo_card .header_card {
+        align-items: center !important;
+    }
     .content_virtual--card .conteudo_card .header_card h1 {
         font-size: 30px;
     }
