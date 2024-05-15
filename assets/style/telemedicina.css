@@ -25,7 +25,7 @@
     margin-bottom: 3rem;
 }
 .telemedicina_content .btn_telemedicina span {
-    font-size: var(--font-14);
+    font-size: 11px;
 }
 .telemedicina_content .btn_telemedicina img {
     width: 22px !important;
