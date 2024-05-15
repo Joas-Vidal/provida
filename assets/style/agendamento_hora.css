@@ -70,7 +70,8 @@
 .modal-content .modal_options--time button {
     border: none;
     padding: 10px;
-    border-radius: 30px
+    border-radius: 30px;
+    color: black;
 }
 .modal-content .footer-modal {
     text-align: right;
@@ -146,4 +147,8 @@
 .modal-data .option_bloco {
     flex-direction: row !important;
     border-radius: 10px;
+}
+.modal_options--time button:focus {
+    outline: none;
+    border: 1px solid var(--green-color);
 }
