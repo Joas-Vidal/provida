@@ -63,6 +63,7 @@ header {
 }
 .content_home {
     padding: 4rem 18px ;
+    padding-bottom: 2rem;
 }
 .blocos .title_bloco {
     display: flex;
