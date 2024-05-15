@@ -75,3 +75,14 @@ li {
 .menu .home img {
     width: 22px;
 }
+.breadcrumbs {
+    display: flex;
+    font-size: var(--font-11);
+    color: white;
+    position: absolute;
+    top: 37px;
+    left: 66px;
+}
+.breadcrumbs .breadcrumb {
+    margin-right: 4px;
+}

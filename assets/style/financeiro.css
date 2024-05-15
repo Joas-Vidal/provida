@@ -149,11 +149,6 @@
     justify-content: center;
     margin: 20px 0;
 }
-.img_pix img {
-    /* border-radius: 4px;
-    padding: 2px;
-    border: 1px solid gray; */
-}
 .confirm-pix, .confirm-boleto {
     width: 100%;
     background-color: var(--green-color);
