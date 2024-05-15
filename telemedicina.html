@@ -11,111 +11,57 @@
         <link rel="stylesheet" href="assets/style/style.css">
         <link rel="stylesheet" href="assets/style/sidebar.css">
         <link rel="stylesheet" href="assets/style/agendamento.css">
+        <link rel="stylesheet" href="assets/style/telemedicina.css">
     </head>
-<body style="background-color: #eee;">
-    <header class="header_page">
-        <div class="agendamento_content--header">
-            <div class="fundo-header">
-                <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
-            </div>
-            <div class="menu">
-                <a href="home.html" class="menu-btn">
-                    <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
-                </a>
-            </div>
-            <div class="content_user">
-                <h2>Grupos de Serviço</h2>
-                <h3>Dividimos os serviços em grupos, escolha uma das opções</h3>
-            </div>
-            <form action="">
-                <div class="user_box">
-                    <input type="text" id="search_agendamento" placeholder="Pesquisa">
-                    <button type="submit">
-                        <img src="assets/icons/search.svg" alt="Buscar">
-                    </button>
+    <body style="background-color: #eee;" >
+        <header class="header_page telemedicina_header">
+            <div class="agendamento_content--header">
+                <div class="fundo-header">
+                    <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
                 </div>
-            </form>
+                <div class="menu">
+                    <a href="home.html" class="menu-btn">
+                        <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                    </a>
+                </div>
+                <div class="content_user">
+                    <h2>Pronto Atendimento Virtual</h2>
+                    <h3>Serviço de orientação médica online</h3>
+                </div>
+                <form action="">
+                    <div class="user_box">
+                       <span>Agora na <strong>PróVida</strong> você tem acesso ao <br> <strong>Pronto Atendimento Virtual</strong></span>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <div class="content_options telemedicina_content">
+            <a href="servicos.html" search="Especialidades Médicas">
+                <div class="option_bloco flex-direction-column">
+                    <img class="img_option" width="100%" src="assets/img/telemedicina.png" alt="Telemedicina">
+                    <div class="text_box">
+                        <h3 class="">
+                            A PróVida agora oferece a você nosso cliente o Pronto Atendimento Virtual, um serviço de orientação médica online com profissionais do Hospital Irsaelita Albert Einstein.
+                        </h3>
+                        <h3 class="mt-1">
+                            Com este serviço você terá à sua disposição na tela do seu celular orientação médica online imediata para tratar sintomas de baixa complexidade sem a necessidade de sair do conforto de sua casa ou
+                            de onde estiver possibilitado maior tranquilidade e seguança e o serviço fica disponível 24h por dia, 7 dias por semana.
+                        </h3>
+                        <h3 class="mt-1">Pronto Atendimento Virtual pe orientação médica sempre.</h3>
+                        <a class="btn_telemedicina" href="pronto_atendimento.html">
+                            <span>
+                                <strong>Pronto Atendimento Virtual</strong>
+                                <p>Iniciar orientação médica online</p>
+                            </span>
+                            <div class="bg_white--video">
+                                <img src="assets/icons/video.svg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </a>
         </div>
-    </header>
-    <div class="content_options">
-        <a href="servicos.html" search="Especialidades Médicas">
-            <div class="option_bloco">
-                <img class="img_option" src="assets/icons/heart-pulse.svg" alt="Especialidades Médicas">
-                <div class="text_box">
-                    <h2 class="title_box">Especialidades Médicas</h2>
-                    <h3>Proporciona uma melhor experiência a você, podendo agendar uma consulta presencial. Você  pode escolher a especialidade, bem como selcionar o município
-                        e o profíssional conveniado que deseja consultar.
-                    </h3>
-                    <h3>Todas as nossas unidades possuem instalações moderadas e preparadas para atender você e sua família.</h3>
-                    <h3>36 serviços disponíveis</h3>
-                </div>
-                <img src="assets/icons/caret-right.svg">
-            </div>
-        </a>
-        <a href="servicos.html" search="Especialidades Não Médicas">
-            <div class="option_bloco">
-                <img class="img_option" src="assets/icons/hearts.svg" alt="Especialidades Não Médicas">
-                <div class="text_box">
-                    <h2 class="title_box">Especialidades Não Médicas</h2>
-                    <h3>Atendimento presencial, onde você escolhe a especialidade não médica, em qual município quer ser atendido e qual o prestador conveniado deseja agendar.</h3>
-                    <h3>27 serviços disponíveis</h3>
-                </div>
-                <img src="assets/icons/caret-right.svg">
-            </div>
-        </a>
-        <a href="servicos.html" search="Exames">
-            <div class="option_bloco">
-                <img class="img_option" src="assets/icons/checkup-list.svg" alt="Exames">
-                <div class="text_box">
-                    <h2 class="title_box">Exames</h2>
-                    <h3>Agende seus exames laboratoriais, você pode escolher o município e laboratório conveniado desejado.</h3>
-                    <h3>27 serviços disponíveis</h3>
-                </div>
-                <img src="assets/icons/caret-right.svg">
-            </div>
-        </a>
-        <div id="nothing_here">
-            <div class="option_bloco nth_here">
-                <img class="img_option" src="assets/icons/stop.svg" alt="Nada Encontrado">
-                <div class="text_box">
-                    <h2 class="title_box">Nenhum Registro Encontrado</h2>
-                    <h3>Por favor, verifique o conteúdo digitado.</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/js/sidebar.js"></script>
-
-<script>
-    // Script simples pra pesquisa dos blocos
-    $('#search_agendamento').on('input', function() {
-        var filtro = $(this).val().toUpperCase();
-        var algumResultadoEncontrado = false; 
-
-        $('.option_bloco').each(function() {
-            var atributoSearch = $(this).parent().attr('search');
-            
-            if (atributoSearch && atributoSearch.toUpperCase().indexOf(filtro) > -1) {
-                $(this).show();
-                algumResultadoEncontrado = true; 
-            } else {
-                $(this).hide();
-            }
-        });
-
-        if (algumResultadoEncontrado) {
-            $('#nothing_here').hide();
-            $('.nth_here').hide();
-        } else {
-            $('#nothing_here').show();
-            $('.nth_here').show();
-        }
-        console.log(algumResultadoEncontrado);
-
-    });
-
-
-</script>

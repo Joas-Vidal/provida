@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+        <title>Serviços</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style/home.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/sidebar.css">
+        <link rel="stylesheet" href="assets/style/agendamento.css">
+        <link rel="stylesheet" href="assets/style/agendamento_hora.css">
+        <link rel="stylesheet" href="assets/style/telemedicina.css">
+    </head>
+<body style="background-color: #eee;">
+    <header class="header_page header_hora contato_header">
+        <div class="agendamento_content--header">
+            <div class="fundo-header">
+                <img src="assets/img/fundo-header2.png" alt="Fundo - Home">
+            </div>
+            <div class="menu">
+                <a href="municipio.html" class="menu-btn">
+                    <img style="height: 30px;" src="assets/icons/arrow-left.svg" alt="Voltar para Página Anterior">
+                </a>
+                <a class="home" href="home.html">
+                    <img src="assets/icons/home.svg" alt="Ir para o inicio">
+                </a>
+            </div>
+            <div class="content_user">
+                <h2>Informações para Contato</h2>
+                <h3>Informe os dados do participante</h3>
+            </div>
+            <div class="user_box">
+                <div class="user_info">
+                    <div class="user_info--contact">
+                        <span>Rafael pinto e silva</span>
+                        <h6>Participante</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content_options hora_content contato_content">
+        <div class="option_bloco">
+            <div class="flex_box w-100 mb-1 texto_contato">
+                <h2>Ao utilizar este serviço precisamos de algumas informações para que possamos entrar em contato se necessário. Informe abaixo um email  telefone celular para contato</h2>
+            </div>
+            <div class="flex_box w-100 bg-gray mb-1">
+                <img class="img_option" src="assets/icons/mail-gray.svg">
+                <div class="text_box">
+                    <h2 class="title_box">E-mail</h2>
+                    <input type="text" value="" placeholder="Email">
+                </div>
+            </div>
+            <div class="flex_box w-100 bg-gray mb-1 relative">
+                <img class="img_option" src="assets/icons/phone-gray.svg">
+                <div class="text_box">
+                    <h2 class="title_box">Telefone</h2>
+                    <input type="text" id="tel" value="" placeholder="Telefone">
+                </div>
+                <span class="count_char">
+                    0/14
+                </span>
+            </div>
+            <a href="final_telemedicina.html" class="finish-scheduling w-100">
+                <img src="assets/icons/check.svg">
+                Solicitar Atendimento
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/sidebar.js"></script>
+<script src="assets/js/agendamento_hora.js"></script>
+
+<script>
+    $('#tel').on('input', function() {
+        var maxLength = 14;
+        var currentLength = $(this).val().length;
+        $('.count_char').text(currentLength + '/' + maxLength);
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var telInput = document.getElementById('tel');
+    
+        telInput.addEventListener('input', function(e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
+        });
+    });
+</script>
+    
